@@ -17,7 +17,7 @@ function generatePassword () {
   const genpassword =[]
   console.log(genpassword)
   if (generateBtn) {
-    length= prompt("How long do you want your password to be? You must pick a number between 8 and 128.");
+    length= parseInt(prompt("How long do you want your password to be? You must pick a number between 8 and 128."));
 // if length is not a number
     if (isNaN(length)) {
       alert("You must input a numeric amount between 8 and 128.")
@@ -51,6 +51,10 @@ function generatePassword () {
       if(confirmCharacter) {
         genpassword.push(rmCharacter)
       }
+      else if (!confirmLower && !confirmUpper && !confirmNumber && !confirmCharacter) {
+        alert("You must input atleast one criteria.")
+        generatePassword()
+      }
 
 // password array is an intermediate placeholder for user generated amount of length from for loop
 var passwordarray=[]
@@ -65,13 +69,7 @@ for (var i=0; i<length; i++) {
 
 //turn password into string
 return passwordarray.join("")
-
-
 };
-
-
-
-
 
 // Write password to the #password input havign issues here**** because of wp
 function writePassword() {
