@@ -5,10 +5,10 @@ var upper = lower.map(lower => lower.toUpperCase())
 var number = [0,1,2,3,4,5,6,7,8,9]
 var character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 //generate randomized string values from arrays, help explaining 0???
-var rmLower= lower[(Math.random()*lower.length)|0]
-var rmUpper= upper[(Math.random()*upper.length)|0]
-var rmNumber= number[(Math.random()*number.length)|0]
-var rmCharacter= character[(Math.random()*character.length)|0]
+var rmLower= lower[Math.floor(Math.random()*lower.length)]
+var rmUpper= upper[Math.floor(Math.random()*upper.length)]
+var rmNumber= number[Math.floor(Math.random()*number.length)]
+var rmCharacter= character[Math.floor(Math.random()*character.length)]
 //password length is also defined
 var length =""
 
@@ -63,17 +63,23 @@ for (var i=0; i<length; i++) {
   console.log(passwordarray)
 }
 
-var wp = passwordarray.join("")
+//turn password into string
+return passwordarray.join("")
+
 
 };
 
-//turn password into string
+
 
 
 
 // Write password to the #password input havign issues here**** because of wp
 function writePassword() {
-  document.getElementById("#password").textContent = wp;
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+  
 
 }
 
