@@ -1,5 +1,5 @@
 # Password Generator
-My own constructed web portfolio using semantic HTML and advanced CSS.
+Generates randomized passwords based on length and criteria UIs.
 
 # Table of Contents
 * [Project Description](#desc)
