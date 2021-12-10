@@ -16,7 +16,7 @@ The password can include special characters.
 <a name="process"> </a>
 ## How I Made It
 
-I first created the arrays that hold the criterion values. Then, I generated randomized string values from the arrays using math.floor(math.random()). I launched the function starting with a length prompt that was converted to a number to be used later to determine the length of the password. Once the length prompt criteria are satisfied, there are a series of confirmation questions asking the user to input their criteria preferences. I pushed the randomized string values into the generated password in the confirmations as they were executed. I then converted the password into another array and finally into a string, which is displyed in the textarea on the page. 
+I first created the arrays that hold the criterion values. Then, I generated randomized string values from the arrays using math.floor(math.random()). I launched the function starting with a length prompt that was converted to a number to be used later to determine the length of the password. Once the length prompt criteria are satisfied, there are a series of confirmation questions asking the user to input their criteria preferences. I pushed the randomized string values into the generated password in the confirmations as they were executed. I then converted the password into another array and finally into a string, which is displayed in the textarea on the page. 
 
 
 <a name= "usage"></a>
