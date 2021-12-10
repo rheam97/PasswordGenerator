@@ -4,7 +4,7 @@ var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n
 var upper = lower.map(lower => lower.toUpperCase())
 var number = [0,1,2,3,4,5,6,7,8,9]
 var character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
-//generate randomized string values from arrays, help explaining 0???
+//generate randomized string values from arrays
 var rmLower= lower[Math.floor(Math.random()*lower.length)]
 var rmUpper= upper[Math.floor(Math.random()*upper.length)]
 var rmNumber= number[Math.floor(Math.random()*number.length)]
@@ -56,7 +56,7 @@ function generatePassword () {
         generatePassword()
       }
 
-// password array is an intermediate placeholder for user generated amount of length from for loop
+// password array is a placeholder for user generated length 
 var passwordarray=[]
 
 // take genpassword and put it in for loop to make it the UI length
@@ -71,7 +71,7 @@ for (var i=0; i<length; i++) {
 return passwordarray.join("")
 };
 
-// Write password to the #password input havign issues here**** because of wp
+// Write password to the #password input
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
