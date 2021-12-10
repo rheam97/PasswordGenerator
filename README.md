@@ -42,6 +42,6 @@ THEN the password is either displayed in an alert or written to the page
 ```
 <a name= "URL"></a>
 ## URL
-Deployed:
-Repo Link:
+Deployed: https://rheam97.github.io/PasswordGenerator/
+Repo Link:https://github.com/rheam97/PasswordGenerator.git
 
